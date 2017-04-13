@@ -1,23 +1,35 @@
-# Building a Facebook Chat Bot with Node and Heroku
+#Introduction
 
-Create a simple Facebook Chat bot that responds to movie queries from users via Facebook messenger. Joyce Echessa steps you through the process in detail.
+This is a simple project that returns Nigerian states, local government areas and a few other pieces of information about the states.  
+The project is live at:
+* [https://naijagraphy.herokuapp.com/](https://naijagraphy.herokuapp.com/)
+Source code can be found at:
+* [https://github.com/Chieze-Franklin/naijagraphy](https://github.com/Chieze-Franklin/naijagraphy)
 
-https://www.sitepoint.com/building-facebook-chat-bot-node-heroku
+###This project demonstrates:
 
-## Requirements
+* The creation of a Node.js server
+* Hosting a Node server on heroku
+* Reading contents from a Github repo
 
-* [Node.js](http://nodejs.org/)
-* [A Facebook Account](https://www.facebook.com/)
-* [A Heroku Account](https://www.heroku.com/)
+###Endpoints:
 
-## License
+####https://naijagraphy.herokuapp.com/states
 
-The MIT License (MIT)
+Returns an array of all the states in Nigeria, including the Federal Capital Territory.
 
-Copyright (c) 2016 SitePoint
+####https://naijagraphy.herokuapp.com/states/{state}
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Returns an object containing info about a state.  
+E.g. https://naijagraphy.herokuapp.com/states/Lagos
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+####https://naijagraphy.herokuapp.com/states/{state}/{info}
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Returns the requested info about the specified state.  
+E.g. https://naijagraphy.herokuapp.com/states/Lagos/lgas  
+The above will return an array containing all the local government areas in Lagos state.
+
+#naijagraphy-contents
+
+Pieces of information about states (like their LGAs) are not hard-coded into the service, rather they are gotten from the Github repository [naijagraphy-contents](https://github.com/Chieze-Franklin/naijagraphy-contents).  
+If there is any piece of information you want to add/change about a state, send a pull request to the naijagraphy-contents repo.
