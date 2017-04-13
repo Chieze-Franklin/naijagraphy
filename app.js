@@ -9,8 +9,26 @@ app.listen((process.env.PORT || 5000));
 
 // Server index page
 app.get("/", function (req, res) {
-    var msg = "This is a simple project that returns Nigerian states, local government areas and a few other pieces of information about the states.<br><br>" +
-    "Source code can be found at: <a href='https://github.com/Chieze-Franklin/naijagraphy'>https://github.com/Chieze-Franklin/naijagraphy</a>.";
+    var msg = 
+    "This is a simple project that returns Nigerian states, local government areas and a few other pieces of information about the states.<br><br>" +
+
+    "Source code can be found at: <a href='https://github.com/Chieze-Franklin/naijagraphy'>https://github.com/Chieze-Franklin/naijagraphy</a>.<br><br>" +
+
+    "<h4>To get all the states in Nigeria:</h4>" +
+    "<a href='https://naijagraphy.herokuapp.com/states'>https://naijagraphy.herokuapp.com/states</a><br>" +
+    "This will return a JSON array containing the names of all the states in Nigeria, including the FCT Abuja.<br><br>" +
+
+    "<h4>To get basic info about a particular state:</h4>" +
+    "https://naijagraphy.herokuapp.com/states/{state}<br>" +
+    "For instance,<br>" +
+    "<a href='https://naijagraphy.herokuapp.com/states/Lagos'>https://naijagraphy.herokuapp.com/states/Lagos</a><br>" +
+    "This will return a JSON object containing basic info (like name and capital) about the specified state.<br><br>" +
+
+    "<h4>To get more info about a particular state:</h4>" +
+    "https://naijagraphy.herokuapp.com/states/{state}/{info}<br>" +
+    "For instance, to get all the Local Government Areas (LGAs) in Lagos state:<br>" +
+    "<a href='https://naijagraphy.herokuapp.com/states/Lagos/lgas'>https://naijagraphy.herokuapp.com/states/Lagos/lgas</a><br>" +
+    "This will return a JSON array containing all the LGAs in the specified state.<br><br>";
     res.send(msg);
 });
 
