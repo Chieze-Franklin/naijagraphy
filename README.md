@@ -3,6 +3,7 @@
 This is a simple project that returns Nigerian states, local government areas and a few other pieces of information about the states.  
 The project is live at:
 * [https://naijagraphy.herokuapp.com/](https://naijagraphy.herokuapp.com/)
+
 Source code can be found at:
 * [https://github.com/Chieze-Franklin/naijagraphy](https://github.com/Chieze-Franklin/naijagraphy)
 
