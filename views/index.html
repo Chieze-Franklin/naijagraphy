@@ -1,0 +1,250 @@
+<header class="header" id="header"><!--header-start-->
+    <div class="container">
+        <figure class="logo animated fadeInDown delay-07s">
+            <a href="#"><img src="assets/img/logo.png" alt=""></a> 
+        </figure>   
+        <h1 class="animated fadeInDown delay-07s">Naijagraphy</h1>
+        <ul class="we-create animated fadeInUp delay-1s">
+            <li>Get the states of Nigeria, their capitals, their local government areas, and other info, with just one request.</li>
+        </ul>
+            <a class="link animated fadeInUp delay-1s" href="#features">Get Started</a>
+    </div>
+</header><!--header-end-->
+
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+	<div class="container">
+        <ul class="main-nav">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+            <li class="small-logo"><a href="#header"><img src="assets/img/small-logo.png" alt=""></a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav><!--main-nav-end-->
+
+<section class="main-section" id="features"><!--main-section-start-->
+	<div class="container">
+    	<h2>Features</h2>
+    	<h6>Send simple <code>GET</code> requests to intuitive URLs to get any info you want.</h6>
+        <div class="row">
+        	<div class="col-lg-4 col-sm-5 wow fadeInLeft delay-05s">
+            	<div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-flag"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>To get all the states in Nigeria:</h3>
+                        <p>Send a <code>GET</code> request to<br>
+                        <a href='https://naijagraphy.herokuapp.com/states'>https://naijagraphy.herokuapp.com/states</a>.<br>
+                        This will return a JSON array containing the names of all the states in Nigeria, including the FCT Abuja.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                    <div class="service-list-col1">
+                        <i class="fa-group"></i>
+                    </div>
+                    <div class="service-list-col2">
+                        <h3>To get basic info about a particular state:</h3>
+                        <p>Send a <code>GET</code> request to<br>
+                        <i>https://naijagraphy.herokuapp.com/states/{state}</i>.<br>
+                        This will return a JSON object containing basic info (like name and capital) about the specified state.<br>
+                        For instance,<br>
+                        <a href='https://naijagraphy.herokuapp.com/states/Lagos'>naijagraphy.herokuapp.com/states/Lagos</a>.</p>
+                    </div>
+                </div>
+                <div class="service-list">
+                	<div class="service-list-col1">
+                    	<i class="fa-building-o"></i>
+                    </div>
+                	<div class="service-list-col2">
+                        <h3>To get more info about a particular state:</h3>
+                        <p>Send a <code>GET</code> request to<br>
+                        <i>https://naijagraphy.herokuapp.com/states/{state}/{info}</i>.<br>
+                        For instance,<br>
+                        <a href='https://naijagraphy.herokuapp.com/states/Lagos/lgas'>naijagraphy.herokuapp.com/states/Lagos/lgas</a><br>
+                        This will return a JSON array containing all the LGAs in Lagos state.<br></p>
+                    </div>
+                </div>
+            </div>
+            <figure class="col-lg-4 col-sm-4  text-right wow fadeInUp delay-02s">
+            	<img src="assets/img/states.png" alt="">
+            </figure>
+            <figure class="col-lg-4 col-sm-3  text-right wow fadeInUp delay-02s">
+                <img src="assets/img/states.lagos.png" alt="">
+            </figure>
+        
+        </div>
+	</div>
+</section><!--main-section-end-->
+
+
+
+<section class="main-section alabaster" id="contribute"><!--main-section alabaster-start-->
+	<div class="container">
+        <h2>Contribute</h2>
+    	<div class="row">
+            <div class="col-lg-6 col-sm-5 featured-work">
+                <P class="padding-b">There is no "hard-coded" list of states, capitals or local government areas in this solution; instead the various data are fetched from this
+                <a href="https://github.com/Chieze-Franklin/naijagraphy-contents">Github repository</a>.<br />
+                So if, in addition to LGAs, you also want data about population of a state to be returned when a request is made to a URL like<br>
+                <code>naijagraphy.herokuapp.com/states/Lagos/population</code><br>
+                head over to the <a href="https://github.com/Chieze-Franklin/naijagraphy-contents">repository</a>, and make a pull request.</P>
+            </div>
+			<figure class="col-lg-6 col-sm-7 wow fadeInLeft">
+            	<img  src="assets/img/states.lagos.lgas.png" alt="">
+            </figure>
+        </div>
+	</div>
+</section><!--main-section alabaster-end-->
+
+<section class="main-section team" id="team"><!--main-section team-start-->
+	<div class="container">
+        <h2>team</h2>
+        <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s"> 
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="assets/img/frank-2.jpg" alt="">
+                    <ul>
+                        <li><a href="https://github.com/Chieze-Franklin" class="fa-github"></a></li>
+                        <li><a href="https://facebook.com/franklin.chieze.5" class="fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/1990hackaholic" class="fa-twitter"></a></li>
+                        <li><a href="https://plus.google.com/+FranklinChieze" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Chieze Franklin</h3>
+                <p class="wow fadeInDown delay-06s">The developer behind this project, converting all the good ideas into lines of code.</p>
+            </div>
+            <div class="team-leader-box">
+                
+            </div>
+        </div>
+    </div>
+</section><!--main-section team-end-->
+
+<section class="business-talking"><!--business-talking-start-->
+	<div class="container">
+        <h2>Let’s Talk.</h2>
+    </div>
+</section><!--business-talking-end-->
+<div class="container">
+<section class="main-section contact" id="contact">
+	   <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s"> 
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="assets/img/frank-3.jpg" alt="">
+                    <ul>
+                        <li><a href="https://github.com/Chieze-Franklin" class="fa-github"></a></li>
+                        <li><a href="https://facebook.com/franklin.chieze.5" class="fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/1990hackaholic" class="fa-twitter"></a></li>
+                        <li><a href="https://plus.google.com/+FranklinChieze" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <p>You can contact me, and also find out more about me on <a href="https://chieze-franklin.github.io">my website</a>.</p>
+            </div>
+            <div class="team-leader-box">
+                
+            </div>
+        </div>
+</section>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false    
+            
+        });
+        
+    });
+</script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+  </script>
+
+
+<script type="text/javascript">
+	$(window).load(function(){
+		
+		$('.main-nav li a').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
+			event.preventDefault();
+		});
+	})
+</script>
+
+<script type="text/javascript">
+
+$(window).load(function(){
+  
+  
+  var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+
+  
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+  
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+        .isotope('reLayout');
+    }
+    
+  }).smartresize(); // trigger resize to set container width
+  $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+			
+            filter: selector,
+         });
+         return false;
+    });
+  
+});
+
+</script>
