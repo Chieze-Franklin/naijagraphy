@@ -56,8 +56,10 @@ app.get("/states", function (req, res) {
 
 // /{state}
 app.get("/states/:state", function (req, res) {
+    var state = req.params.state.toLowerCase().replace(' ', '-');
+    if (state == "fct" || state == "federal-capital-territory") state = "abuja";
     request({
-        url: "https://raw.githubusercontent.com/Chieze-Franklin/naijagraphy-contents/master/states/" + req.params.state.toLowerCase().replace(' ', '-') + "/state.json",
+        url: "https://raw.githubusercontent.com/Chieze-Franklin/naijagraphy-contents/master/states/" + state + "/state.json",
         method: "GET"
     }, function(error, response, body) {
         if (response.statusCode == 200) {
@@ -74,8 +76,10 @@ app.get("/states/:state", function (req, res) {
 
 // /{state}/lgas, /{state}/location, /{state}/population, ...
 app.get("/states/:state/:info", function (req, res) {
+    var state = req.params.state.toLowerCase().replace(' ', '-');
+    if (state == "fct" || state == "federal-capital-territory") state = "abuja";
     request({
-        url: "https://raw.githubusercontent.com/Chieze-Franklin/naijagraphy-contents/master/states/" + req.params.state.toLowerCase().replace(' ', '-') + "/" + req.params.info.toLowerCase().replace(' ', '-') + ".json",
+        url: "https://raw.githubusercontent.com/Chieze-Franklin/naijagraphy-contents/master/states/" + state + "/" + req.params.info.toLowerCase().replace(' ', '-') + ".json",
         method: "GET"
     }, function(error, response, body) {
         if (response.statusCode == 200) {
